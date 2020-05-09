@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="holder">
+        <div class="quiz_card">
+            <p class="score"></p>
+            <br>
+            <p id="question">Questions</p>
+            <p id="a" onclick="checkAns(this.id)">Option A</p>
+            <p id="b" onclick="checkAns(this.id)">Option B</p>
+            <p id="c" onclick="checkAns(this.id)">Option C</p>
+            <button id="btn" onclick="submit()">Next</button>
+        </div>        
+
+        <div class="score_card">
+            <h3>Game Over!</h3>
+            <h4 id="score"></h4>
+            <button id="startbtn" onclick="start_again()">Start again</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="script.js"></script>
